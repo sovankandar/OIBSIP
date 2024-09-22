@@ -1,0 +1,33 @@
+@keyframes fadeIn{
+}
+@keyframes pulse {
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+}
+.gradient-bg{
+    background: linear-gradient(135deg,#6EE7B7 0%,#3B82F6 50%,#9333EA 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 10s ease infinite;
+}
+@keyframes gradientShift {
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position:0% 50%}
+}
+.glass-effect{
+    backdrop-filter:blur(10px);
+    background-color:rgba(255,255,255,0.1s);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.animate-fadeIn{
+    animation: fadeIn ease-out 0.5s forwards;
+}
+
+.animate-pulse{
+     animation: pulse 2s infinite;
+}

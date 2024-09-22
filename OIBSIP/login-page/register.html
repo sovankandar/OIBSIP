@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form registartion</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.1/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./register.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="gradient-bg min-h-screen flex itmes-center justify-center p-4 bg-opacity-75 bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400">
+    <div class="glass-effect w-full max-w-md p-8 rounded-xl shadow-2xl space-y-8 animate-fadeIn" >
+        <h2 class="text-4xl font-bold text-center text-white mb-8 animate-pulse">Register</h2>
+        <form class="space-y-6">
+            <div class="animate-fadeIn" style="animation-delay: 0.2s; ">
+                <label for="name" class="block text-sm font-medium text-white">Full Name</label>
+                <input type="text" id="name" name="name" required class="mt-1 block w-full px-3 py-2 bg-white bg-opacity-20 border border-gray-00 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-white transition duration-300">
+            </div>
+            <div class="animate-fadeIn" style="animation-delay: 0.4s; ">
+                 <label for="email" class="block text-sm font-medium text-white">Email Address</label>
+                 <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white bg-opacity-20 border border-gray-00 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-white transition duration-300">
+            </div>
+            <div class="animate-fadeIn" style="animation-delay: 0.4s;" >
+                <label for="email" class="block text-sm font-medium text-white">Password</label>
+                <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 bg-white bg-opacity-20 border border-gray-00 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-white transition duration-300">
+           </div>
+           <div class="animate-fadeIn" style="animation-delay: 0.4s; ">
+            <label for="email" class="block text-sm font-medium text-white">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required class="mt-1 block w-full px-3 py-2 bg-white bg-opacity-20 border border-gray-00 rounded-md text-sm shadow-sm placeholder-gray-400 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 text-white transition duration-300">
+       </div>
+       <div class="animate-fadeIn" style="animation-delay: 1s; \">
+        <button type="submit" class="w-full flex justify-center py-2 px-4 border border-tranparent rounded-md shadow-sm text-sm font-medium text-white bg-gradient-to-r from-pink-500 to-yellow-500 hover:from-pink-600 hover:to-yellow-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+            Register
+        </button>
+       </div>
+        </form>
+        <p class="mt-4 text-center text-sm text-white animate-fadeIn" style="animation-delay: 1.2s; ">
+            Already have an account?
+            <a href="./index.html" class="font-medium text-yellow-300 hover:text-yellow-200 transition duration-150 ease-in-out">Sign In</a>
+        </p>
+    </div>
+    <script src="./validate.js"></script>
+</body>
+</html>
+
+
